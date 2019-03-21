@@ -1,0 +1,192 @@
+
+.defaultColor:visited, 
+.defaultColor:hover, 
+.defaultColor {
+    color: #00aeef;
+}
+/*图片*/
+	/*基础属性*/
+		.upload-file{
+			border: 1px solid #ccc;
+		    border-radius: 5px;
+		    min-height: 150px;
+		    padding: 10px;
+		    position: relative;
+		    margin: 10px 0;
+		    width: 100%;
+		    float: left;
+		}
+		.upload-file-bg{
+			background: #fff url(../img/dr.png) no-repeat center;
+		}
+		/*按钮*/
+		.upload-btn:visited,
+		.upload-btn,
+		.upload-btn:active,
+		.upload-btn:focus{
+			min-width: 100px;
+			height: 34px;
+			line-height: 34px;
+			color: #00aeef;
+      text-align: center; 
+      border-radius: 4px;
+      cursor: pointer;
+      border: 1px solid #00aeef;
+      -webkit-transition: all 0.15s linear;
+      transition: all 0.15s linear;
+      padding: 0 12px;
+      float: right;
+		}
+		.upload-btn:hover{
+      background-color: #00aeef;
+      color: #fff;
+		}
+		.fujianBox .upload-btn{
+			float: initial;
+		}
+	/*上传图片后*/
+		.upload-img {
+		    width: 120px;
+		    height: 120px;
+		    display: inline-block;
+		    position: relative;
+		    float: left;
+		    margin: 10px 10px;
+		}
+		.ui-image {
+		    font-size: 0px;
+		    width: 120px;
+		    min-height: 120px;
+		    overflow: hidden;
+		    text-align: center;
+		    vertical-align: middle;
+		    display: table-cell;
+		}
+		.ui-image:after {
+		    position: absolute;
+		    left: 0px;
+		    top:0px;
+		    right:0px;
+		    bottom: 0px;
+		    background: rgba(100,100,100,0.5);
+		    display: none;
+		}
+		.ui-image img {
+		    cursor: pointer;
+		    max-width: 120px;
+		    max-height: 120px;
+		}
+		/*.upload-fileOnlyImg .upload-img {
+		    width: 90%;
+		    margin: 5px 5%;
+		}*/
+	/*删除图片*/
+		.ui-opts {
+		    font-size: 24px;
+		    background: none;
+		    display: none;
+		    position: absolute;
+		    left: initial;
+		    top: -10px;
+		    right: -10px;
+		    color: #d9534f;
+		    cursor: pointer;
+		    opacity: 1;
+		}
+		.upload-img:hover .ui-opts{
+			display: block;
+		}
+	/*编辑图片title*/
+		.ui-opts-edit {
+			top: 90px;
+			color: #00aeef;
+			font-size: 20px;
+		}
+	/*上传成功或失败*/
+		.ui-fail,
+		.ui-detail,
+		.ui-progress{
+		    /*display: none;*/
+		    position: absolute;
+		    text-align: center;
+		    left: 0;
+		    right: 0;
+		    border-radius: 4px;
+		}
+		.ui-detail {
+			display: none;
+		}
+		.ui-fail,
+		.ui-progress {
+			top: 50px;
+		    background: #00aeef;
+		    color: #FFFFFF;
+		    opacity: 1;
+		}
+
+
+		.title {
+		    width: 100%;
+		    height: 40px;
+		    line-height: 40px;
+		    background: #FFFFFF;
+		    text-align: center;
+		}
+		.title .img {
+		    padding-left: 10px;
+		    display: inline-block;
+		    float: left;
+		}
+		.title .name {
+		    font-size: 16px;
+		    color: #000;
+		    display: inline-block;
+		    position: absolute;
+		    left: 50%;
+		    margin-left: -42px;
+		}
+		#phoneImg .default {
+		    width: auto;
+		    float: none;
+		}
+
+
+
+		.tips {
+		    line-height: 25px;
+		    color: #bbbbbb;
+		}
+
+
+		.bugModal-bj {
+		    position: absolute;
+		    left: 0px;
+		    right: 0px;
+		    top: 0px;
+		    bottom: 0px;
+		    background: #000000;
+		    opacity: 0.4;
+		    z-index: 9;
+		    display: none;
+		}
+
+/*文件*/
+	.upload-fujian {
+	    padding-top: 10px;
+	}
+	.upload-fujian p {
+	    padding: 5px 0;
+	    font-size: 13px;
+	}
+	.upload-fujian p .del,
+	.upload-fujian p .edit {
+	    cursor: pointer;
+	    color: #d9534f;
+	    font-size: 24px;
+	}
+	.upload-fujian p .edit {
+	    color: #00aeef;
+	    margin-right: 10px;
+	    font-size: 20px;
+	}
+

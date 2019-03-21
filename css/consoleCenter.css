@@ -1,0 +1,165 @@
+/*.mt_none { display: none !important; }
+.mt_in   { display: inline-block !important; }
+.mt_block{ display: block !important; }*/
+
+/*系统概况*/
+ 	.systemOutline_table thead th:nth-of-type(1) { min-width: 70px; width: 70px;  } /*日期范围*/
+	.systemOutline_table thead th:nth-of-type(2) { min-width: 80px;  } /*成交订单数*/
+	.systemOutline_table thead th:nth-of-type(3) { min-width: 90px; } /*交易金额*/
+	.systemOutline_table thead th:nth-of-type(4) { min-width: 80px; } /*创建项目数*/
+	.systemOutline_table thead th:nth-of-type(5) { min-width: 80px; } /*注册用户数*/
+	.systemOutline_table thead th:nth-of-type(6) { min-width: 80px; } /*注册IP数*/
+	.systemOutline_table thead th:nth-of-type(7) { min-width: 80px; } /*登录用户数*/
+	.systemOutline_table thead th:nth-of-type(8) { min-width: 80px; } /*登录IP数*/
+/*图表*/
+	.main_table.main_tableEchart thead th:nth-of-type(1) { min-width: 800px; }
+
+/*用户列表*/
+  .userList_table >thead th:nth-of-type(1) { min-width: 70px; width: 70px; } /*ID*/
+	.userList_table >thead th:nth-of-type(2) { min-width: 150px; word-break: break-all; } /*Email*/
+	.userList_table >thead th:nth-of-type(3) { min-width: 100px; } /*手机*/
+	.userList_table >thead th:nth-of-type(4) { min-width: 70px; } /*职位*/
+	.userList_table >thead th:nth-of-type(5) { min-width: 65px; } /*微信绑定*/
+	.userList_table >thead th:nth-of-type(6) { min-width: 90px; } /*企业账户*/
+	.userList_table >thead th:nth-of-type(7) { min-width: 40px; } /*状态*/
+	.userList_table >thead th:nth-of-type(8) { min-width: 65px; } /*邮件验证*/
+	.userList_table >thead th:nth-of-type(9) { min-width: 120px; } /*注册IP*/
+	.userList_table >thead th:nth-of-type(10) { min-width: 130px; } /*注册时间*/
+ 	.userList_table >tbody tr td:nth-of-type(2){  word-break: break-all; }
+ 	.userD_email span{ color: #00aeef; cursor: pointer;}
+ 	
+
+/*工单列表*/
+  .userQList_table >thead th:nth-of-type(1) { min-width: 80px; width: 80px; } /*ID*/
+	.userQList_table >thead th:nth-of-type(2) { min-width: 80px; } /*用户ID*/
+	.userQList_table >thead th:nth-of-type(3) { min-width: 80px; } /*姓名*/
+	.userQList_table >thead th:nth-of-type(4) { min-width: 100px; } /*电话*/
+	.userQList_table >thead th:nth-of-type(5) { min-width: 130px; } /*公司*/
+	.userQList_table >thead th:nth-of-type(6) { min-width: 70px; } /*工单状态*/
+	.userQList_table >thead th:nth-of-type(7) { min-width: 130px; } /*创建时间*/
+	.userQList_table >thead th:nth-of-type(8) { min-width: 130px; } /*修改时间*/
+	.userQList_table >tbody tr td:nth-of-type(5),
+	.userQList_table >tbody tr td:nth-of-type(3){  word-break: break-all; }
+	
+	.userQD_answer >div{ position: relative; min-height: 1px; padding: 0 15px 10px 15px; }
+	.userQD_answer >div >label{position: relative; min-height: 1px; width: 100%; margin-bottom: 0;}
+	.userQD_answer >div >div{ padding-left: 2em;}
+	.userQD_answer >div >span{ position: absolute; right: 0;top: 0; padding-right: 15px; color: #999; font-size: 12px;}
+
+/*公司列表*/
+  .companyList_table >thead th:nth-of-type(1) { min-width: 70px; width: 70px; } /*ID*/
+	.companyList_table >thead th:nth-of-type(2) { min-width: 150px; } /*公司*/
+	.companyList_table >thead th:nth-of-type(3) { min-width: 100px; } /*手机*/
+	.companyList_table >thead th:nth-of-type(4) { min-width: 70px; } /*认证*/
+	.companyList_table >thead th:nth-of-type(5) { min-width: 200px; } /*主营*/
+
+/*项目列表*/
+  .projectList_table >thead th:nth-of-type(1) { min-width: 70px; width: 70px; } /*ID*/
+	.projectList_table >thead th:nth-of-type(2) { min-width: 160px;  } /*项目名称*/
+	.projectList_table >thead th:nth-of-type(3) { min-width: 70px; } /*成员数*/
+	.projectList_table >thead th:nth-of-type(4) { min-width: 70px; width: 70px; } /*拥有人ID*/
+	.projectList_table >thead th:nth-of-type(5) { min-width: 100px; } /*手机*/
+	.projectList_table >thead th:nth-of-type(6) { min-width: 90px; } /*专业版*/
+	.projectList_table >thead th:nth-of-type(7) { min-width: 40px; } /*状态*/
+	.projectList_table >thead th:nth-of-type(8) { min-width: 120px; } /*注册IP*/
+	.projectList_table >thead th:nth-of-type(9) { min-width: 130px; } /*注册时间*/
+	.mdLinkDt >div,
+	.mdLinkDt >span{ color: #00aeef; cursor:pointer; padding-right: 10px;}
+	/*.mdLinkDt >div:hover{ color: #c81623; }*/
+
+	.userD_content >h3,
+	.projectD_content >h3,
+	.customerD_content > h3{ padding: 0 15px; font-weight: 600; }
+	.userD_contentBox >div,
+	.projectD_contentBox >div,
+	.customerD_contentBox >div{
+		position: relative;
+		padding: 0 15px 20px 15px;
+	}
+	.userD_contentBox >div >div,
+	.projectD_contentBox >div >div,
+	.customerD_contentBox >div >div{
+		padding-left: 2em;
+	}
+	.userD_contentBox >div >span,
+	.projectD_contentBox >div >span,
+	.customerD_contentBox >div >span{
+		position: absolute;
+		right: 0;
+		bottom: 5px;
+		padding-right: 15px;
+		color: #999;
+		font-size: 12px;
+	}
+
+
+/*订单列表*/
+  	.orderList_table >thead th:nth-of-type(1) { min-width: 70px; width: 70px; } /*ID*/
+	.orderList_table >thead th:nth-of-type(2) { min-width: 140px; } /*订单号*/
+	.orderList_table >thead th:nth-of-type(3) { min-width: 60px; width: 60px; } /*项目ID*/
+	.orderList_table >thead th:nth-of-type(4) { min-width: 60px; width: 60px; } /*用户ID*/
+	.orderList_table >thead th:nth-of-type(5) { min-width: 140px; } /*订单类型*/
+	.orderList_table >thead th:nth-of-type(6) { min-width: 80px; } /*金额(元)*/
+	.orderList_table >thead th:nth-of-type(7) { min-width: 70px; } /*状态*/
+	.orderList_table >thead th:nth-of-type(8) { min-width: 40px; } /*发票*/
+	.orderList_table >thead th:nth-of-type(9) { min-width: 65px; } /*支付方式*/
+	.orderList_table >thead th:nth-of-type(10) { min-width: 130px; } /*创建时间
+
+/*客户列表*/
+	.customerRenewPercent{ float: left; height: 50px; line-height: 50px; }
+	.customerRenewPercent span{ padding-left: 5px; font-size: 12px; color: #00aeef; }
+
+  .customerList_table >thead th:nth-of-type(1) { min-width: 70px; width: 70px; } /*ID*/
+	.customerList_table >thead th:nth-of-type(2) { min-width: 160px; word-break: break-all; } /*客户名称*/
+	.customerList_table >thead th:nth-of-type(3) { min-width: 70px; } /*客户类型*/
+	.customerList_table >thead th:nth-of-type(4) { min-width: 90px; } /*过期时间*/
+	.customerList_table >thead th:nth-of-type(5) { min-width: 75px; } /*续费*/
+	.customerList_table >thead th:nth-of-type(6) { min-width: 110px; } /*订单类型*/
+	.customerList_table >thead th:nth-of-type(7) { min-width: 70px; } /*用户数*/
+	.customerList_table >thead th:nth-of-type(8) { min-width: 70px; } /*付款人ID*/
+	.customerList_table >thead th:nth-of-type(9) { min-width: 150px; word-break: break-all; } /*邮箱*/
+	.customerList_table >thead th:nth-of-type(10) { min-width: 105px; } /*手机*/
+
+	.customerList_table >tbody tr td:nth-of-type(2){ word-break: break-all; }
+	.customerList_table >tbody tr td:nth-of-type(9){ word-break: break-all; }
+	.customerD_buyerEmail span{ color: #00aeef; cursor: pointer;}
+
+/*管理员*/
+	.adminList_table >thead th:nth-of-type(1) { min-width: 70px; width: 70px; } /*ID*/
+	.adminList_table >thead th:nth-of-type(2) { min-width: 100px; } /*用户名*/
+	.adminList_table >thead th:nth-of-type(3) { min-width: 80px; } /*姓名*/
+	.adminList_table >thead th:nth-of-type(4) { min-width: 40px; } /*状态*/
+	.adminList_table >thead th:nth-of-type(5) { min-width: 76px; } /*角色*/
+	.adminList_table >thead th:nth-of-type(6) { min-width: 90px; } /*有效期*/
+
+/*黑名单*/
+	.blackList_table >thead th:nth-of-type(1) { min-width: 150px; }
+	.blackList_table >thead th:nth-of-type(2) { min-width: 100px; width: 100px; }
+	.blackList_table .blackListDelTd{
+		/*width: 100px;*/
+		height: 26px; 
+		line-height: 24px; 
+		padding:0 9px; 
+		/*margin-top: 6px;*/
+		text-align: center;
+		/*font-size: 75%;*/
+		border-radius: 4px;
+		color: #00aeef;
+		border: 1px solid #00aeef;
+	}
+	.blackList_table .blackListDelTd:hover{ color: #fff; background-color: #00aeef; }
+	.blackListDelTdOn{ background-color: #eee !important; }
+/*App*/
+	.appList_table th:nth-of-type(1) { min-width: 45px; width: 60px;  } /*ID*/
+	.appList_table th:nth-of-type(2) { min-width: 150px; } /*版本类型*/
+	.appList_table th:nth-of-type(3) { min-width: 80px; } /*版本名称*/
+	.appList_table th:nth-of-type(4) { min-width: 70px; } /*版本号*/
+	.appList_table th:nth-of-type(5) { min-width: 130px; } /*发布时间*/
+	.appD_url a{ color:#00aeef; text-decoration: none; }
+	.appD_url a:hover{ color:#00aeef; text-decoration: none; }
+/*设置*/
+	.smSetBtnBox ul >li{ display: inline-block; }
+
+	/*.hideTime{ display: none; }*/
+
+

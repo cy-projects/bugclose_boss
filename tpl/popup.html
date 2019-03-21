@@ -1,0 +1,743 @@
+<!-- 修改密码 -->
+<form action="" class="popupForm" id="changePwd_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">旧密码</label>
+		<div class="col-sm-10">
+			<input  id="changePwdOld" type="password" placeholder="最多输入20个字符" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">新密码</label>
+		<div class="col-sm-10">
+			<input  id="changePwdNew1" type="password" placeholder="最多输入20个字符" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">确认密码</label>
+		<div class="col-sm-10">
+			<input  id="changePwdNew2" type="password" placeholder="最多输入20个字符" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="changePwdBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 用户增加 -->
+<form action="" class="popupForm" id="userListAdd_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">邮箱</label>
+		<div class="col-sm-10">
+			<input  id="userListAddEmail" type="text" placeholder="请输入邮箱" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">用户名</label>
+		<div class="col-sm-10">
+			<input  id="userListAddUserName" type="text" placeholder="请输入用户名" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">职位</label>
+		<div class="col-sm-10">
+			<input  id="userListAddJobTitle" type="text" placeholder="请输入职位" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="userListAddBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 用户列表 企业用户增加包月 -->
+<form action="" class="popupForm" id="userAddProMonth_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">包月数</label>
+		<div class="col-sm-10">
+			<input  id="userAddProMonthNumber" type="text" placeholder="请输入包月数" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="userAddProMonthBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 用户列表 企业用户试用 -->
+<form action="" class="popupForm" id="userAddProDay_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">试用天数</label>
+		<div class="col-sm-10">
+			<input  id="userAddProDayNumber" type="text" placeholder="请输入天数" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="userAddProDayBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+<!-- 用户重置手机号 -->
+<form action="" class="popupForm" id="userResetPhone_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">手机</label>
+		<div class="col-sm-10">
+			<input  id="userResetPhone" type="text" placeholder="最多输入20个字符" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="userResetPhoneBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+<!-- 用户重置密码 -->
+<form action="" class="popupForm" id="userResetPwd_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">新密码</label>
+		<div class="col-sm-10">
+			<input  id="userResetPwd" type="text" placeholder="最多输入20个字符" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="userResetPwdBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+<!-- 用户创建订单 -->
+<form action="" class="popupForm" id="userCreateOrder_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">订单类型</label>
+	    <div class="col-sm-10 input-group">
+	      <input type="text" class="form-control" id="userCreateOrder_orderType" placeholder="请选择订单类型" readonly="readonly" value="自定义" data-value="Custom">
+	      <div class="input-group-btn">
+	        <button type="button" class="btn btn-default" data-value="1">
+	        	<strong class="fa fa-caret-down"></strong>
+	        </button>
+	        <ul class="dropdown-menu dropdown-menu-right">
+						<div>
+							<li><a href="javascript:void(0);" data-value="ProjectPro1Month">专业版包1个月</a></li>
+							<li><a href="javascript:void(0);" data-value="ProjectPro3Month">专业版包3个月</a></li>
+							<li><a href="javascript:void(0);" data-value="ProjectPro6Month">专业版包6个月</a></li>
+							<li><a href="javascript:void(0);" data-value="ProjectPro12Month">专业版包12个月</a></li>
+							<li><a href="javascript:void(0);" data-value="UserPro1Month">企业用户包1个月</a></li>
+							<li><a href="javascript:void(0);" data-value="UserPro3Month">企业用户包3个月</a></li>
+							<li><a href="javascript:void(0);" data-value="UserPro6Month">企业用户包6个月</a></li>
+							<li><a href="javascript:void(0);" data-value="UserPro12Month">企业用户包12个月</a></li>
+							<li><a href="javascript:void(0);" data-value="Custom">自定义</a></li>
+						</div>
+						<p class="dropdown-menu-right_sanjiao"></p>
+	        </ul>
+	      </div>
+	    </div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">支付金额(元)</label>
+		<div class="col-sm-10">
+			<input  id="userCreateOrder_fee" type="number" placeholder="1-100000" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">订单内容</label>
+		<div class="col-sm-10">
+			<textarea id="userCreateOrder_subject" cols="50" rows="5" placeholder="最多输入200个字符" onfocus="checkStrNum(this,200)" oninput="checkStrNum(this,200)" onpropertychange="checkStrNum(this,200)"></textarea>
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="userCreateOrderSubBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+<!-- 用户列表  评论 -->
+<form action="" class="popupForm" id="userEditComment_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2 lh30">
+			<h6 class="fw600">评论内容</h6>
+		</label>
+		<div class="col-sm-10">
+			<textarea name="" id="userEditComment_content" cols="50" rows="5" placeholder="最多输入500个字符" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="userEditComment_subBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+
+<!-- 工单列表  修改 -->
+<form action="" class="popupForm" id="userQListEdit_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">工单ID</label>
+		<div class="col-sm-4 userQDEdit_id"></div>
+		<label class="col-sm-2">用户ID</label>
+		<div class="col-sm-4 userQDEdit_userId"></div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">姓名</label>
+		<div class="col-sm-10">
+			<input  id="userQListEditFullName" type="text" placeholder="请输入姓名" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">公司</label>
+		<div class="col-sm-10">
+			<input  id="userQListEditCompany" type="text" placeholder="请输入公司" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">手机</label>
+		<div class="col-sm-10">
+			<input  id="userQListEditPhone" type="text" placeholder="请输入手机" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">工单状态</label>
+		<div class="col-sm-10 layer_pCheckbox1" id="userQListEditResolved">
+			<ul>
+				<li><input type="radio" name="userQListEditResolvedd" value="false" id="userQListEditResolved1"><label for="userQListEditResolved1">未解决</label></li>
+				<li><input type="radio" name="userQListEditResolvedd" value="true"  id="userQListEditResolved2"><label for="userQListEditResolved2">已关闭</label></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2 lh_init">工单内容</label>
+		<div class="col-sm-10 lh_init" id="userQListEditQuestion"></div>
+	</div>
+	<div class="row layer_p md32">
+		<label class="col-sm-2 lh30">备注</label>
+		<div class="col-sm-10">
+			<textarea name="" id="userQListEditNotes" cols="50" rows="5" placeholder="请输入备注" onfocus="checkStrNum(this,1000)" oninput="checkStrNum(this,1000)" onpropertychange="checkStrNum(this,1000)"></textarea>
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="userQListEditBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 工单列表  回复 -->
+<form action="" class="popupForm" id="userQListAnswer_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2 lh30">
+			<h6 class="fw600">回复内容</h6>
+			<!-- <div class="addImgFujian" data-show="1">
+				<a role="button">
+					图片及附件
+					<i class="fa fa-caret-down"></i>
+				</a>
+			</div> -->
+		</label>
+		<div class="col-sm-10">
+			<textarea name="" id="userQListAnswerNotes" cols="50" rows="5" placeholder="最多输入500个字符" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+		</div>
+	</div>
+	<div class="row imgFujian">
+		<!-- <div class="imgBox clearfix">
+			<label class="col-sm-2">图片</label>
+			<div class="col-sm-10">
+				<div class="upload-file upload-file-bg" style="min-height: 150px;"></div>
+        <a class="btn selectImages upload-btn">
+        	<i class="fa fa-image"></i>
+        	选择图片
+        </a>
+			</div>
+		</div> -->
+		<div class="fujianBox clearfix">
+			<label class="col-sm-2">附件</label>
+			<div class="col-sm-10">
+				<a href="javascript:void(0);" class="btn upload-btn selectImages">
+					<i class="fa fa-paperclip"></i>
+					添加附件
+				</a>
+				<div class="upload-fujian"></div>
+			</div>
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="userQListAnswerBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 公司列表  认证拒绝 -->
+<form action="" class="popupForm" id="companyListRejectWhy_submit">
+	<div class="row layer_p md32 md12">
+		<label class="col-sm-2 lh30">拒绝理由</label>
+		<div class="col-sm-10">
+			<textarea name="" id="companyListRejectWhy" cols="50" rows="5" placeholder="最多输入500个字符" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="companyListRejectWhyBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 项目列表 专业版增加包月 -->
+<form action="" class="popupForm" id="projectAddProMonth_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">包月数</label>
+		<div class="col-sm-10">
+			<input  id="projectAddProMonthNumber" type="text" placeholder="请输入包月数" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="projectAddProMonthBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 项目列表 专业版试用 -->
+<form action="" class="popupForm" id="projectAddProDay_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">试用天数</label>
+		<div class="col-sm-10">
+			<input  id="projectAddProDayNumber" type="text" placeholder="请输入天数" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="projectAddProDayBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 项目列表 专业版试用 -->
+<form action="" class="popupForm" id="projectEditOwner_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">变更拥有人</label>
+		<div class="col-sm-10">
+			<input  id="projectEditOwner" type="text" placeholder="请输入拥有人ID" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="projectEditOwnerBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 项目列表  评论 -->
+<form action="" class="popupForm" id="projectEditComment_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2 lh30">
+			<h6 class="fw600">评论内容</h6>
+		</label>
+		<div class="col-sm-10">
+			<textarea name="" id="projectEditComment_content" cols="50" rows="5" placeholder="最多输入500个字符" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="projectEditComment_subBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 订单 线下 完成支付 -->
+<form action="" class="popupForm" id="orderListOfflineNotify_submit">
+	<div class="row layer_p">
+		<label class="col-sm-3">支付流水号</label>
+		<div class="col-sm-9">
+			<input  id="orderListEditOfflineNotify_tradeNo" type="text" placeholder="请输入支付流水号" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-3">金额(元)</label>
+		<div class="col-sm-9">
+			<input  id="orderListEditOfflineNotify_fee" type="text" placeholder="请输入金额" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="orderListOfflineNotifyBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 订单 申请开票 -->
+<form action="" class="popupForm" id="orderListReqInvoice_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">订单选择</label>
+		<div class="col-sm-10 orderListReqInvoice_orderIds" data-ids="" data-fees="">
+			<table>
+				<thead>
+					<tr>
+						<th>订单号</th>
+						<th>订单内容</th>
+						<th>金额</th>
+						<th>支付时间</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">发票抬头</label>
+		<div class="col-sm-10">
+			<input  id="orderListReqInvoice_header" type="text" placeholder="请输入发票抬头" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+		</div>
+	</div>
+
+	<div class="row layer_p">
+		<label class="col-sm-2">税号</label>
+		<div class="col-sm-10">
+			<input  id="orderListReqInvoice_taxCode" type="text" placeholder="请输入税号" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">发票内容</label>
+	    <div class="col-sm-10 input-group">
+	      <input type="text" class="form-control" id="orderListReqInvoice_title" placeholder="请选择发票内容" readonly="readonly" value="信息系统增值服务" data-value="信息系统增值服务">
+	      <div class="input-group-btn">
+	        <button type="button" class="btn btn-default" data-value="1">
+	        	<strong class="fa fa-caret-down"></strong>
+	        </button>
+	        <ul class="dropdown-menu dropdown-menu-right">
+						<div>
+							<li><a href="javascript:void(0);" data-value="信息系统增值服务">信息系统增值服务</a></li>
+							<li><a href="javascript:void(0);" data-value="专业技术服务">专业技术服务</a></li>
+							<li><a href="javascript:void(0);" data-value="信息系统服务">信息系统服务</a></li>
+							<li><a href="javascript:void(0);" data-value="软件开发服务">软件开发服务</a></li>
+							<li><a href="javascript:void(0);" data-value="软件维护服务">软件维护服务</a></li>
+							<li><a href="javascript:void(0);" data-value="纸制文具及办公用品">纸制文具及办公用品</a></li>
+						</div>
+						<p class="dropdown-menu-right_sanjiao"></p>
+	        </ul>
+	      </div>
+	    </div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">快递地址</label>
+		<div class="col-sm-10">
+			<input  id="orderListReqInvoice_sendAddress" type="text" placeholder="请输入快递地址" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">收件人</label>
+		<div class="col-sm-10">
+			<input  id="orderListReqInvoice_contact" type="text" placeholder="请输入收件人" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">收件人电话</label>
+		<div class="col-sm-10">
+			<input  id="orderListReqInvoice_contactPhone" type="text" placeholder="请输入收件人电话" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">发票类型</label>
+	    <div class="col-sm-5 input-group">
+	      <input type="text" class="form-control" id="orderListReqInvoice_invoiceType" placeholder="请选择发票类型" readonly="readonly" value="增值税普通发票(3个点)" data-value="Normal">
+	      <div class="input-group-btn">
+	        <button type="button" class="btn btn-default" data-value="1">
+	        	<strong class="fa fa-caret-down"></strong>
+	        </button>
+	        <ul class="dropdown-menu dropdown-menu-right orderListReqInvoice_invoiceTypeMenu">
+						<div>
+							<li><a href="javascript:void(0);" data-value="Normal">增值税普通发票(3个点)</a></li>
+							<li><a href="javascript:void(0);" data-value="Special">增值税专用发票(6个点)</a></li>
+						</div>
+						<p class="dropdown-menu-right_sanjiao"></p>
+	        </ul>
+	      </div>
+	    </div>
+	    <div class="col-sm-2">
+	    	<label class="fl pd22">金额</label>
+	    	<div class="fl orderListReqInvoice_feeTotal"><span class="colorThemeRed fw600">4500</span></div>
+	    </div>
+	    <div class="col-sm-3 zhuanpiaoTextDec"><span></span></div>
+	</div>
+	<div class="zhuanpiaoBox" style="display: none;">
+		<div class="row layer_p">
+			<label class="col-sm-2">开户行</label>
+			<div class="col-sm-10">
+				<input  id="orderListReqInvoice_bankName" type="text" placeholder="请输入开户行" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">银行账号</label>
+			<div class="col-sm-10">
+				<input  id="orderListReqInvoice_account" type="text" placeholder="请输入银行账号" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">公司地址</label>
+			<div class="col-sm-10">
+				<input  id="orderListReqInvoice_companyAddress" type="text" placeholder="请输入公司地址" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">公司电话</label>
+			<div class="col-sm-10">
+				<input  id="orderListReqInvoice_companyPhone" type="text" placeholder="请输入公司电话" onfocus="checkStrNum(this,100)" oninput="checkStrNum(this,100)" onpropertychange="checkStrNum(this,100)">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="orderListReqInvoiceBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 客户列表  评论 -->
+<form action="" class="popupForm" id="customerEditComment_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2 lh30">
+			<h6 class="fw600">评论内容</h6>
+		</label>
+		<div class="col-sm-10">
+			<textarea name="" id="customerEditComment_content" cols="50" rows="5" placeholder="最多输入500个字符" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="customerEditComment_subBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 管理员  增加 -->
+<form action="" class="popupForm" id="adminListAdd_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">用户名</label>
+		<div class="col-sm-10">
+			<input  id="adminListAddUsername" type="text" placeholder="请输入登陆用户名" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">姓名</label>
+		<div class="col-sm-10">
+			<input  id="adminListAddFullName" type="text" placeholder="请输入姓名" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">密码</label>
+		<div class="col-sm-10">
+			<input  id="adminListAddPwd" type="password" placeholder="请输入密码" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">角色</label>
+		<div class="col-sm-10 layer_pCheckbox1" id="adminListAddRoles">
+			<ul>
+				<li><input type="checkbox" value="Admin" 		 id="adminListAddRoles1"><label for="adminListAddRoles1">系统管理</label></li>
+				<li><input type="checkbox" value="UserManage" 	 id="adminListAddRoles2"><label for="adminListAddRoles2">用户管理</label></li>
+				<li><input type="checkbox" value="ProjectManage" id="adminListAddRoles3"><label for="adminListAddRoles3">项目管理</label></li>
+				<li><input type="checkbox" value="OrderManage" 	 id="adminListAddRoles4"><label for="adminListAddRoles4">订单管理</label></li>
+				<li><input type="checkbox" value="Config" 		 id="adminListAddRoles5"><label for="adminListAddRoles5">头像管理</label></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row layer_p pd12">
+		<label class="col-sm-2">有效期</label>
+	    <div class="col-sm-10 input-group">
+	      <input type="text" class="form-control" id="adminListAddExpireTime" placeholder="请选择日期" readonly="readonly">
+	      <div class="input-group-btn">
+	        <label type="button" id="adminListAddExpireTimeBtn" class="btn btn-default dropdown-toggle" for="adminListAddExpireTime">
+	        	<strong class="fa fa-calendar" style="margin-left: -2px;"></strong>
+	        </label>
+	      </div>
+	    </div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="adminListAddBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 管理员  修改 -->
+<form action="" class="popupForm" id="adminListEdit_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">用户名</label>
+		<div class="col-sm-10 adminListEditUsername"></div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">姓名</label>
+		<div class="col-sm-10">
+			<input  id="adminListEditFullName" type="text" placeholder="请输入姓名" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">状态</label>
+		<div class="col-sm-10 layer_pCheckbox1" id="adminListEditDisabled">
+			<ul>
+				<li><input type="radio" name="adminListEditDis" value="false" id="adminListEditDisabled1"><label for="adminListEditDisabled1">正常</label></li>
+				<li><input type="radio" name="adminListEditDis" value="true"  id="adminListEditDisabled2"><label for="adminListEditDisabled2">禁止</label></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">角色</label>
+		<div class="col-sm-10 layer_pCheckbox1" id="adminListEditRoles">
+			<ul>
+				<li><input type="checkbox" value="Admin" 		 id="adminListEditRoles1"><label for="adminListEditRoles1">系统管理</label></li>
+				<li><input type="checkbox" value="UserManage" 	 id="adminListEditRoles2"><label for="adminListEditRoles2">用户管理</label></li>
+				<li><input type="checkbox" value="ProjectManage" id="adminListEditRoles3"><label for="adminListEditRoles3">项目管理</label></li>
+				<li><input type="checkbox" value="OrderManage" 	 id="adminListEditRoles4"><label for="adminListEditRoles4">订单管理</label></li>
+				<li><input type="checkbox" value="Config" 		 id="adminListEditRoles5"><label for="adminListEditRoles5">头像管理</label></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row layer_p pd12">
+		<label class="col-sm-2">有效期</label>
+	    <div class="col-sm-10 input-group">
+	      <input type="text" class="form-control" id="adminListEditExpireTime" placeholder="请选择日期" readonly="readonly">
+	      <div class="input-group-btn">
+	        <label type="button" id="adminListEditExpireTimeBtn" class="btn btn-default dropdown-toggle" for="adminListEditExpireTime">
+	        	<strong class="fa fa-calendar" style="margin-left: -2px;"></strong>
+	        </label>
+	      </div>
+	    </div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="adminListEditBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- 黑名单  增加 -->
+<form action="" class="popupForm" id="blackListAdd_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">IP</label>
+		<div class="col-sm-10">
+			<input  id="blackListAddIp" type="text" placeholder="请输入ip" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="blackListAddBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- App 	增加 -->
+<form action="" class="popupForm" id="appAdd_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">APP类型</label>
+		<div class="col-sm-10 layer_pCheckbox1" id="appListAddType">
+			<ul>
+				<li><input type="radio" name="appListAddTypee" value="Android" id="appListAddType1"><label for="appListAddType1">Android</label></li>
+				<li><input type="radio" name="appListAddTypee" value="IOS"  id="appListAddType2"><label for="appListAddType2">IOS</label></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">版本名称</label>
+		<div class="col-sm-10">
+			<input  id="appListAddName" type="text" placeholder="请输入App版本名称" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">版本号</label>
+		<div class="col-sm-10">
+			<input  id="appListAddBuild" type="text" placeholder="请输入App版本号" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">下载地址</label>
+		<div class="col-sm-10">
+			<input  id="appListAddUrl" type="text" placeholder="请输入App下载地址" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)">
+		</div>
+	</div>
+	<div class="row layer_p md32 md12">
+		<label class="col-sm-2 lh30">更新日志</label>
+		<div class="col-sm-10">
+			<textarea name="" id="appListAddChangeLog" cols="50" rows="5" placeholder="请输入更新日志" onfocus="checkStrNum(this,1000)" oninput="checkStrNum(this,1000)" onpropertychange="checkStrNum(this,1000)"></textarea>
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="appAddBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+<!-- App 	修改 -->
+<form action="" class="popupForm" id="appEdit_submit">
+	<div class="row layer_p">
+		<label class="col-sm-2">APP类型</label>
+		<div class="col-sm-10 layer_pCheckbox1" id="appListEditType">
+			<ul>
+				<li><input type="radio" name="appListEditTypee" value="Android" id="appListEditType1"><label for="appListEditType1">Android</label></li>
+				<li><input type="radio" name="appListEditTypee" value="IOS"  id="appListEditType2"><label for="appListEditType2">IOS</label></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">版本名称</label>
+		<div class="col-sm-10">
+			<input  id="appListEditName" type="text" placeholder="请输入App版本名称" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">版本号</label>
+		<div class="col-sm-10">
+			<input  id="appListEditBuild" type="text" placeholder="请输入App版本号" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+		</div>
+	</div>
+	<div class="row layer_p">
+		<label class="col-sm-2">下载地址</label>
+		<div class="col-sm-10">
+			<input  id="appListEditUrl" type="text" placeholder="请输入App下载地址" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)">
+		</div>
+	</div>
+	<div class="row layer_p md32 md12">
+		<label class="col-sm-2 lh30">更新日志</label>
+		<div class="col-sm-10">
+			<textarea name="" id="appListEditChangeLog" cols="50" rows="5" placeholder="请输入更新日志" onfocus="checkStrNum(this,1000)" oninput="checkStrNum(this,1000)" onpropertychange="checkStrNum(this,1000)"></textarea>
+		</div>
+	</div>
+	<div class="row layer_for md14">
+		<div>
+			<input class="cancelBtn" type="button" value="取消">
+			<input id="appEditBtn" type="submit" value="提交">
+		</div>
+	</div>
+</form>
+
+
+
+
+

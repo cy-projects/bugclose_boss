@@ -1,0 +1,52 @@
+.standalone_none { display: none !important; }
+.standalone_in   { display: none !important; }
+.standalone_block{ display: none !important; }
+
+/*用户列表*/
+  	.userList_table >thead th:nth-of-type(1) { min-width: 70px; width: 70px; } /*ID*/
+	.userList_table >thead th:nth-of-type(2) { min-width: 150px; word-break: break-all; } /*Email*/
+	.userList_table >thead th:nth-of-type(3) { min-width: 100px; } /*手机*/
+	.userList_table >thead th:nth-of-type(4) { min-width: 80px; } /*职位*/
+	.userList_table >thead th:nth-of-type(5) { min-width: 40px; } /*状态*/
+	.userList_table >thead th:nth-of-type(6) { min-width: 130px; } /*注册时间*/
+ 	.userList_table >tbody tr td:nth-of-type(2){  word-break: break-all; }
+ 	.userD_email span{ color: #00aeef; cursor: pointer;}
+
+
+/*项目列表*/
+  	.projectList_table >thead th:nth-of-type(1) { min-width: 70px; width: 70px; } /*ID*/
+	.projectList_table >thead th:nth-of-type(2) { min-width: 170px;  } /*项目名称*/
+	.projectList_table >thead th:nth-of-type(3) { min-width: 70px; } /*拥有人ID*/
+	.projectList_table >thead th:nth-of-type(4) { min-width: 40px; } /*状态*/
+	.projectList_table >thead th:nth-of-type(5) { min-width: 90px; } /*注册时间*/
+	.mdLinkDt >div,
+	.mdLinkDt >span{ color: #00aeef; cursor:pointer; padding-right: 10px;}
+
+/*管理员*/
+  	.adminList_table >thead th:nth-of-type(1) { min-width: 70px; width: 70px; } /*ID*/
+	.adminList_table >thead th:nth-of-type(2) { min-width: 100px; } /*用户名*/
+	.adminList_table >thead th:nth-of-type(3) { min-width: 80px; } /*姓名*/
+	.adminList_table >thead th:nth-of-type(4) { min-width: 40px; } /*状态*/
+	.adminList_table >thead th:nth-of-type(5) { min-width: 76px; } /*角色*/
+	.adminList_table >thead th:nth-of-type(6) { min-width: 90px; } /*有效期*/
+
+/*黑名单*/
+	.blackList_table >thead th:nth-of-type(1) { min-width: 150px; }
+	.blackList_table >thead th:nth-of-type(2) { min-width: 100px; width: 100px; }
+	.blackList_table .blackListDelTd{
+		/*width: 100px;*/
+		height: 26px; 
+		line-height: 24px; 
+		padding:0 9px; 
+		/*margin-top: 6px;*/
+		text-align: center;
+		/*font-size: 75%;*/
+		border-radius: 4px;
+		color: #00aeef;
+		border: 1px solid #00aeef;
+	}
+	.blackList_table .blackListDelTd:hover{ color: #fff; background-color: #00aeef; }
+	.blackListDelTdOn{ background-color: #eee !important; }
+
+
+

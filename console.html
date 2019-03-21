@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>控制台</title>
+	<link type="image/x-icon" rel="icon" href="/favic.ico" />
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-theme.min.css">
+
+	<!-- 基于jq -->
+	<link rel="stylesheet" href="plugins/Font-Awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="plugins/layer/skin/layer.css">
+	<link rel="stylesheet" href="plugins/jquery-ui-1.12.0/jquery-ui.min.css">
+
+	<!--CSS引用文件-->
+	<link rel="stylesheet" href="css/base.css?v150">
+	<link rel="stylesheet" href="css/consoleBase.css?v150">
+	<link rel="stylesheet" href="css/consoleCenter.css?v150">
+	<link rel="stylesheet" href="css/layerBase.css?v150">
+	<link rel="stylesheet" href="css/upload.css?v150">
+
+	<!--JS封装函数-->
+	<script src="js/utils.js?v12"></script>
+	<script type="text/javascript">
+		platform();
+		window.boss_token = bugStorage.getItem('boss_token');
+    if(boss_token == null){
+    	window.location.href = '/boss/login.html';
+    }
+	</script>
+</head>
+<body>
+<div class="mask"></div>
+<div class="wrapper yemian">
+	<div class="wrapperChange">
+		<!-- 头部开始 -->
+		<div class="header">
+			<!--头部logo-->
+			<div class="headerBg"></div>
+			<div class="headerBgLeft"></div>
+			<div class="headerLogo">
+				<a href="">
+					<img src="img/loginTopLogo.png" alt="">
+				</a>
+			</div>
+			<div class="headerRight">
+				<!--侧边栏隐藏按钮-->
+				<div class="hiddenSidebar fa fa-bars" data-value="1"></div>
+				<!--头部设置-->
+				<div class="fr">
+					<!--用户名盒子-->
+					<div class="setting pd24 pd42">
+						<span class="username">
+							<div class="username_wrap colorWhite">
+								<i class="fa fa-user"></i>
+								<span class="username_txt pd21 pd42"></span>
+								<i class="fa fa-caret-down"></i>
+							</div>
+							<div class="user_setting">
+								<div class="userSetFace pd12 pd32">
+									<!-- <span class="face">
+										<img class="face" src="img/login_logo.png" alt="">
+										<span class="changeBJ"></span>
+										<span class="changeTxt">修改头像</span>
+									</span><br/> -->
+									<span class="userSetFace_username" alt="" title=""></span>
+								</div>
+								<!-- <div class="" style="border: 1px solid #eee; border-top: none; float: left"> -->
+								<div class="">
+									<ul class="userSetUl">
+										<!-- <li><i class="fa fa-envelope-o"></i>修改邮箱</li> -->
+										<!-- <li class="change_userName"><i class="fa fa-user"></i>修改姓名</li> -->
+										<li class="change_password"><i class="fa fa-key"></i>修改密码</li>
+										<!-- <li><i class="fa fa-bell-o"></i>提醒设置</li> -->
+										<!-- <li><i class="fa fa-reorder"></i>订单管理</li> -->
+									</ul>
+									<div class="userSetLogout pd12 pd32">
+										<div class="exit">
+											<span class="logout pd44"><i class="fa fa-power-off"></i>退出</span>
+										</div>
+									</div>
+								</div>
+							</div>	<!--user_setting-->
+						</span>	 <!--username-->
+					</div>	<!--setting-->
+				</div>	<!--right-->
+			</div>	<!--headerRight-->
+		</div>
+		<!-- 头部结束 -->
+
+		<!-- 侧边栏开始 -->
+		<nav class="sidebar" style="">
+			<div class="sidebarSlim">
+				<div class="sideMain"></div>
+			</div>
+		</nav>
+		<!-- 侧边栏结束 -->
+
+		<!-- 右侧内容开始 -->
+	    <div class="bugContent pd11">
+	        <div class="bugMainSlim" id="main">
+	        	<div class="bugMain"></div>
+			</div>
+	    </div>
+	    <!-- 右侧内容结束 -->
+
+		<!--详情页开始-->
+	    <div class="main_detail"></div>
+	    <!-- 详情页结束 -->
+	</div>
+</div><!-- wrapper    页面   闭合标签-->
+
+
+
+<!--JS引用文件-->
+	<script src="plugins/jquery-2.2.3.min.js"></script>							<!--jQuery 文件-->
+	<script src="plugins/layer/layer.min.js"></script>							<!--弹出层 layer插件-->
+	<script>layer.msg('<i class="fa fa-spinner fa-spin" style="margin-right: 10px;"></i>正在加载...',{ time : 5*60*1000, shade : [ 0.4, '#000',true ] }); </script>
+	 <!-- <script src="plugins/jquery-ui-1.12.0/jquery-ui.min.js"></script> -->
+	
+	<!-- bootstrap -->
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>				<!-- Bootstrap -->
+	<script src="plugins/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap-datetimepicker.zh-CN.js"></script>
+
+	<!-- 插件 -->
+	<script src="plugins/jquery.slimscroll/jquery.slimscroll.min.js"></script>	<!--滚动条jquery.slimscroll.js插件-->
+	<script src="plugins/jquery.pagination.js"></script> <!-- 分页插件-->
+	<script src="plugins/echarts/echarts.min.js"></script>
+
+    <!-- web -->
+    <script type="text/javascript" src="js/require.js"></script>
+    <script src="js/ajax.js?v14"></script>
+    <script type="text/javascript" src="js/console.dsf4ds.js"></script>
+
+
+
+
+</body>
+</html>

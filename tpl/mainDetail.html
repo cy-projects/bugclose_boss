@@ -1,0 +1,715 @@
+	<!-- 详情页插入此容器<div class="main_detail">	     </div> -->
+<!-- 用户列表详情页 -->
+	<div class="userD">
+		<div class="main_detail_top">
+			<span class="main_detail_hidden" title="关闭"><i class="fa fa-angle-right"></i></span>
+			<div class="main_detail_btn">
+				<button class="userD_setUnVerifiedBtn standalone_block" type="button" data-value="">取消邮箱认证</button>
+				<button class="userD_setVerifiedBtn standalone_block" 	type="button" data-value="">邮箱认证</button>
+				<button class="userD_cancelProBtn standalone_block" 		type="button">取消企业账号</button>
+				<button class="userD_addProMonthBtn standalone_block" 	type="button">企业账号包月</button>
+				<button class="userD_addProDayBtn standalone_block" 		type="button">企业账号试用</button>
+				<button class="userD_disabledBtn" 	 type="button">禁止</button>
+				<button class="userD_enableBtn" 		 type="button">恢复</button>
+				<button class="userD_resetPhoneBtn"  type="button">修改手机号</button>
+				<button class="userD_resetPwdBtn" 	 type="button">重置密码</button>
+				<button class="userD_createOrderBtn" type="button">创建订单</button>
+				<button class="userD_commentBtn" 	type="button">评论</button>
+			</div>
+		</div>
+		<!-- 详情页内容 -->
+		<div class="main_detail_content">
+			<div class="main_detail_contentSlim">
+				<div class="main_detail_contentPage">
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">用户ID</label>
+							<div class="col-sm-9 pd0 userD_id"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">用户姓名</label>
+							<div class="col-sm-9 pd0 userD_userName"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-3 pd0">用户账号</label>
+							<div class="col-sm-9 pd0 userD_email"></div>
+						</div>					
+					</div>
+					<div class="row standalone_block">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">手机</label>
+							<div class="col-sm-9 pd0 userD_phone"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">微信绑定</label>
+							<div class="col-sm-9 pd0 userD_wxVerified"></div>
+						</div>
+					</div>
+					<div class="row standalone_block">
+						<div class=" col-sm-6">
+							<label class="col-sm-3 pd0">企业账号</label>
+							<div class="col-sm-9 pd0 userD_pro"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">邮箱认证</label>
+							<div class="col-sm-9 pd0 userD_emailVerified"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">职位</label>
+							<div class="col-sm-9 pd0 userD_jobTitle"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">用户状态</label>
+							<div class="col-sm-9 pd0 userD_disabled"></div>
+						</div>
+					</div>
+					<div class="row standalone_block">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">注册IP</label>
+							<div class="col-sm-9 pd0 userD_registerIP"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">登录IP</label>
+							<div class="col-sm-9 pd0 userD_lastLoginIP"></div>
+						</div>
+					</div>
+					<div class="row hideTime">
+						<div class="col-sm-6 ">
+							<label class="col-sm-3 pd0">注册时间</label>
+							<div class="col-sm-9 pd0 userD_registerTime"></div>
+						</div>
+						<div class="col-sm-6 standalone_block">
+							<label class="col-sm-3 pd0">登录时间</label>
+							<div class="col-sm-9 pd0 userD_lastLoginTime"></div>
+						</div>
+					</div>
+					<div class="row userD_content"></div>
+					<hr/>
+					<div class="row hideTime">
+						<div class="mdLinkDt">
+							<span class="userD_isProjectOwner pd43">拥有的项目</span>
+							<span class="userD_isProjectMember">参与的项目</span>
+							<span class="userD_emailMember standalone_block">同域名用户</span>
+							<span class="userD_isOrderOwner standalone_block">相关订单</span>
+							<span class="userD_searchRegisterIP_user standalone_block">同IP用户</span>
+							<span class="userD_searchRegisterIP_project standalone_block">同IP项目</span>
+							<span class="userD_searchFromUserId standalone_block">邀请列表</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 工单列表详情页 -->
+	<div class="userQD">
+		<div class="main_detail_top">
+			<span class="main_detail_hidden" title="关闭"><i class="fa fa-angle-right"></i></span>
+			<div class="main_detail_btn">
+				<button class="userQD_editBtn" 	type="button">编辑</button>
+				<button class="userQD_delBtn" 	type="button">删除</button>
+				<button class="userQD_answerBtn" type="button">回复</button>
+			</div>
+		</div>
+		<!-- 详情页内容 -->
+		<div class="main_detail_content">
+			<div class="main_detail_contentSlim">
+				<div class="main_detail_contentPage">
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">工单ID</label>
+							<div class="col-sm-9 pd0 userQD_id"></div>
+						</div>
+						<div class="col-sm-6  mdLinkDt">
+							<label class="col-sm-3 pd0">用户ID</label>
+							<div class="col-sm-9 pd0 userQD_userId" title="点击进入用户详情"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">姓名</label>
+							<div class="col-sm-9 pd0 userQD_fullName"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">公司</label>
+							<div class="col-sm-9 pd0 userQD_company"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">手机</label>
+							<div class="col-sm-9 pd0 userQD_phone"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">工单状态</label>
+							<div class="col-sm-9 pd0 userQD_resolved"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-2">工单内容</label>
+							<div class="col-sm-10 userQD_question"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-2">备注</label>
+							<div class="col-sm-10 userQD_notes"></div>
+						</div>
+					</div>
+					<hr>
+					<div class="row userQD_answer">
+						<!-- <div>
+							<label>用户</label>
+							<div>请给我开发票？</div>
+							<span>2017-03-03 10:31</span>
+						</div>
+						<div>
+							<label>客服</label>
+							<div>请提供订单号，发票抬头，地址，联系人，电话</div>
+							<span>2017-03-03 11:00</span>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 邀请列表详情页 -->
+	<div class="invitedD">
+		<div class="main_detail_top">
+			<span class="main_detail_hidden" title="关闭"><i class="fa fa-angle-right"></i></span>
+			<div class="main_detail_btn">
+				<button class="invitedD_editBtn" 	type="button">编辑</button>
+				<button class="invitedD_delBtn" 	type="button">删除</button>
+				<button class="invitedD_answerBtn" type="button">回复</button>
+			</div>
+		</div>
+		<!-- 详情页内容 -->
+		<div class="main_detail_content">
+			<div class="main_detail_contentSlim">
+				<div class="main_detail_contentPage">
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">ID</label>
+							<div class="col-sm-9 pd0 invitedD_id"></div>
+						</div>
+						<div class="col-sm-6  mdLinkDt">
+							<label class="col-sm-4 pd0">邀请人ID</label>
+							<div class="col-sm-8 pd0 invitedD_fromUserId" title="点击进入邀请人详情"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">邀请时间</label>
+							<div class="col-sm-9 pd0 invitedD_invitedTime"></div>
+						</div>
+						<div class="col-sm-6  mdLinkDt">
+							<label class="col-sm-4 pd0">被邀请人ID</label>
+							<div class="col-sm-8 pd0 invitedD_toUserId" title="点击进入被邀请人详情"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 公司列表详情页 -->
+	<div class="companyD">
+		<div class="main_detail_top">
+			<span class="main_detail_hidden" title="关闭"><i class="fa fa-angle-right"></i></span>
+			<div class="main_detail_btn">
+				<button class="companyD_approveBtn" 	type="button">认证通过</button>
+				<button class="companyD_rejectBtn" 	type="button">认证拒绝</button>
+				<button class="companyD_closeBtn" type="button">关闭</button>
+			</div>
+		</div>
+		<!-- 详情页内容 -->
+		<div class="main_detail_content">
+			<div class="main_detail_contentSlim">
+				<div class="main_detail_contentPage">
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">ID</label>
+							<div class="col-sm-9 pd0 companyD_id"></div>
+						</div>
+						<div class="col-sm-6 mdLinkDt">
+							<label class="col-sm-3 pd0">曝光人ID</label>
+							<div class="col-sm-9 pd0 companyD_userId" title="点击进入曝光人详情"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-3 pd0">公司名称</label>
+							<div class="col-sm-9 pd0 companyD_name"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-3 pd0">公司网址</label>
+							<div class="col-sm-9 pd0 companyD_homePage"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-3 pd0">公司地址</label>
+							<div class="col-sm-9 pd0 companyD_address"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-3 pd0">主营范围</label>
+							<div class="col-sm-9 pd0 companyD_title"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-3 pd0">电子邮箱</label>
+							<div class="col-sm-9 pd0 companyD_email"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-3 pd0">联系电话</label>
+							<div class="col-sm-9 pd0 companyD_phone"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-3 pd0">城市</label>
+							<div class="col-sm-9 pd0 companyD_cities"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-3 pd0">认证</label>
+							<div class="col-sm-9 pd0 companyD_state"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-3 pd0">能力说明</label>
+							<div class="col-sm-9 pd0 companyD_description"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 pic companyD_logo">
+						<!-- 	<h5>公司LOGO</h5>
+							<div class="col-sm-12">
+								<img src="img/dr.png">
+								<img src="img/dr.png">
+								<img src="img/dr.png">
+							</div> -->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 pic companyD_license">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 pic companyD_intro">
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0"></label>
+							<div class="col-sm-9 pd0 companyD_"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-4 pd0"></label>
+							<div class="col-sm-8 pd0 companyD_"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0"></label>
+							<div class="col-sm-9 pd0 companyD_"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-4 pd0"></label>
+							<div class="col-sm-8 pd0 companyD_"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0"></label>
+							<div class="col-sm-9 pd0 companyD_"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-4 pd0"></label>
+							<div class="col-sm-8 pd0 companyD_"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0"></label>
+							<div class="col-sm-9 pd0 companyD_"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-4 pd0"></label>
+							<div class="col-sm-8 pd0 companyD_"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0"></label>
+							<div class="col-sm-9 pd0 companyD_"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-4 pd0"></label>
+							<div class="col-sm-8 pd0 companyD_"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0"></label>
+							<div class="col-sm-9 pd0 companyD_"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-4 pd0"></label>
+							<div class="col-sm-8 pd0 companyD_"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0"></label>
+							<div class="col-sm-9 pd0 companyD_"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-4 pd0"></label>
+							<div class="col-sm-8 pd0 companyD_"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 项目列表详情页 -->
+	<div class="projectD">
+		<div class="main_detail_top">
+			<span class="main_detail_hidden" title="关闭"><i class="fa fa-angle-right"></i></span>
+			<div class="main_detail_btn">
+				<button class="projectD_cancelProBtn" 	type="button">取消专业版</button>
+				<button class="projectD_addProMonthBtn" type="button">专业版包月</button>
+				<button class="projectD_addProDayBtn" 	type="button">专业版试用</button>
+				<button class="projectD_disabledBtn" 	type="button">禁止</button>
+				<button class="projectD_enableBtn" 		type="button">恢复</button>
+				<button class="projectD_ownerBtn" 		type="button">变更拥有人</button>
+				<button class="projectD_commentBtn" 	type="button">评论</button>
+			</div>
+		</div>
+		<!-- 详情页内容 -->
+		<div class="main_detail_content">
+			<div class="main_detail_contentSlim">
+				<div class="main_detail_contentPage">
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">项目ID</label>
+							<div class="col-sm-9 pd0 projectD_id"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">项目名称</label>
+							<div class="col-sm-9 pd0 projectD_name"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">数据库</label>
+							<div class="col-sm-9 pd0 projectD_dbName"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">项目状态</label>
+							<div class="col-sm-9 pd0 projectD_disabled"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 mdLinkDt mdProjectOwnerDt">
+							<label class="col-sm-3 pd0">拥有人ID</label>
+							<div class="col-sm-9 pd0 projectD_ownerId" title="点击进入用户详情"></div>
+						</div>
+						<div class="col-sm-6 standalone_block">
+							<label class="col-sm-3 pd0">专业版</label>
+							<div class="col-sm-9 pd0 projectD_pro"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 standalone_block">
+							<label class="col-sm-3 pd0">注册IP</label>
+							<div class="col-sm-9 pd0 projectD_createdIP"></div>
+						</div>
+						<div class="col-sm-6 hideTime">
+							<label class="col-sm-3 pd0">注册时间</label>
+							<div class="col-sm-9 pd0 projectD_createdTime"></div>
+						</div>
+					</div>				
+					<div class="row projectD_content"></div>
+					<hr/>
+					<div class="row hideTime">
+						<div class="mdLinkDt">
+							<span class="projectD_Members pd43">项目成员</span>
+							<span class="projectD_orders pd43 standalone_block">相关订单</span>
+							<span class="projectD_searchRegisterIP_user standalone_block">同IP用户</span>
+							<span class="projectD_searchRegisterIP_project standalone_block">同IP项目</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 订单详情页 -->
+	<div class="orderD">
+		<div class="main_detail_top">
+			<span class="main_detail_hidden" title="关闭"><i class="fa fa-angle-right"></i></span>
+			<div class="main_detail_btn">
+				<button class="orderD_invoiceTruebtn" type="button">已开发票</button>
+				<button class="orderD_invoiceFalsebtn" type="button">未开发票</button>
+				<button class="orderD_offlineNotifybtn" type="button">完成支付</button>
+				<button class="orderD_reqInvoicebtn" type="button">申请开票</button>
+				<button class="orderD_refundbtn" type="button">退款</button>
+			</div>
+		</div>
+		<!-- 详情页内容 -->
+		<div class="main_detail_content">
+			<div class="main_detail_contentSlim">
+				<div class="main_detail_contentPage">
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">订单类型</label>
+							<div class="col-sm-9 pd0 orderD_subject"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">订单号</label>
+							<div class="col-sm-9 pd0 orderD_orderNo"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 mdLinkDt">
+							<label class="col-sm-5 pd0">付款人用户ID</label>
+							<div class="col-sm-7 pd0 orderD_userId" title="点击进入用户详情"></div>
+						</div>
+						<div class="col-sm-6 mdLinkDt">
+							<label class="col-sm-3 pd0">项目ID</label>
+							<div class="col-sm-9 pd0 orderD_projectId" title="点击进入项目详情"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">金额(元)</label>
+							<div class="col-sm-9 pd0 orderD_fee"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">支付方式</label>
+							<div class="col-sm-9 pd0 orderD_payType"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">订单状态</label>
+							<div class="col-sm-9 pd0 orderD_state"></div>
+						</div>
+						<div class="col-sm-6 hideTime">
+							<label class="col-sm-3 pd0">订单发票</label>
+							<div class="col-sm-9 pd0 orderD_invoice"></div>
+						</div>
+					</div>					
+					<div class="row">
+						<div class="col-sm-6 hideTime">
+							<label class="col-sm-3 pd0">订单时间</label>
+							<div class="col-sm-9 pd0 orderD_orderTime"></div>
+						</div>
+						<div class="col-sm-6 hideTime">
+							<label class="col-sm-3 pd0">支付时间</label>
+							<div class="col-sm-9 pd0 orderD_payTime"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="col-sm-2 pd0">支付流水号</label>
+							<div class="col-sm-10 pd0 orderD_tradeNo"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 客户管理详情页 -->
+	<div class="customerD">
+		<div class="main_detail_top">
+			<span class="main_detail_hidden" title="关闭"><i class="fa fa-angle-right"></i></span>
+			<div class="main_detail_btn">
+				<button class="customerD_commentBtn" type="button">评论</button>
+			</div>
+		</div>
+		<!-- 详情页内容 -->
+		<div class="main_detail_content">
+			<div class="main_detail_contentSlim">
+				<div class="main_detail_contentPage">
+					<div class="row">
+						<div class="col-sm-6 mdLinkDt">
+							<label class="col-sm-3 pd0 ">ID</label>
+							<div class="col-sm-9 pd0 customerD_id"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">客户名称</label>
+							<div class="col-sm-9 pd0 customerD_name"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">客户类型</label>
+							<div class="col-sm-9 pd0 customerD_customerType"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">过期时间</label>
+							<div class="col-sm-9 pd0 customerD_expireDate"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">续费(次)</label>
+							<div class="col-sm-9 pd0 customerD_renew"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">订单类型</label>
+							<div class="col-sm-9 pd0 customerD_orderType"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">用户数</label>
+							<div class="col-sm-9 pd0 customerD_userNumber"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">付款人ID</label>
+							<div class="col-sm-9 pd0 customerD_buyerId"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">邮箱</label>
+							<div class="col-sm-9 pd0 customerD_buyerEmail"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">手机</label>
+							<div class="col-sm-9 pd0 customerD_buyerPhone"></div>
+						</div>
+					</div>
+					<div class="row customerD_content"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 管理员详情页 -->
+	<div class="adminD">
+		<div class="main_detail_top">
+			<span class="main_detail_hidden" title="关闭"><i class="fa fa-angle-right"></i></span>
+			<div class="main_detail_btn">
+				<button class="adminD_disabledBtn" 	type="button" >禁止</button>
+				<button class="adminD_enableBtn" 	type="button" >恢复</button>
+				<button class="adminD_editBtn" 		type="button" >修改</button>
+			</div>
+		</div>
+		<!-- 详情页内容 -->
+		<div class="main_detail_content">
+			<div class="main_detail_contentSlim">
+				<div class="main_detail_contentPage">
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">用户名</label>
+							<div class="col-sm-9 pd0 adminD_username"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">姓名</label>
+							<div class="col-sm-9 pd0 adminD_fullName"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-single">
+							<label class="col-sm-1">角色</label>
+							<div class="col-sm-11 adminD_roles"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">状态</label>
+							<div class="col-sm-9 pd0 adminD_disabled"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-3 pd0">有效期</label>
+							<div class="col-sm-9 pd0 adminD_expireTime"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- APP管理详情页 -->
+	<div class="appD">
+		<div class="main_detail_top">
+			<span class="main_detail_hidden" title="关闭"><i class="fa fa-angle-right"></i></span>
+			<div class="main_detail_btn">
+				<button class="appD_editBtn" 	type="button">编辑</button>
+				<button class="appD_delBtn" 	type="button">删除</button>
+			</div>
+		</div>
+		<!-- 详情页内容 -->
+		<div class="main_detail_content">
+			<div class="main_detail_contentSlim">
+				<div class="main_detail_contentPage">
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-4 pd0">ID</label>
+							<div class="col-sm-8 pd41 pd20 appD_id"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-4 pd0">APP类型</label>
+							<div class="col-sm-8 pd0 appD_type"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<label class="col-sm-4 pd0">版本名称</label>
+							<div class="col-sm-8 pd41 pd20 appD_name"></div>
+						</div>
+						<div class="col-sm-6">
+							<label class="col-sm-4 pd0">版本号</label>
+							<div class="col-sm-8 pd0 appD_build"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="col-sm-2 pd0">下载地址</label>
+							<div class="col-sm-10 pd0 appD_url"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="col-sm-2 pd0">更新日志</label>
+							<div class="col-sm-10 pd0 appD_changeLog"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="col-sm-2 pd0">发布时间</label>
+							<div class="col-sm-10 pd0 appD_publishTime"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+

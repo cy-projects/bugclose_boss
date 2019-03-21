@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>登录</title>
+	<!-- <link type="image/x-icon" rel="icon" href="favic.ico" /> -->   
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/layer/skin/layer.css">
+
+    <link rel="stylesheet" href="css/base.css?v12"> 
+	<link rel="stylesheet" href="css/login.css?v12">
+
+    <script src="js/utils.js"></script>
+    <script type="text/javascript">
+        // platform();
+        // window.token = bugStorage.getItem('token');
+        // if(token != null){
+        // 	window.location.href = '/boss/console.html';
+        // }
+    </script>
+
+
+</head>
+<body>
+
+<div class="wrapper yemian">
+	
+    <div class="login-top">
+        <div class="login-top-container container">
+            <div class="title">
+                <a href="#">
+                    <img src="img/loginTopLogo.png">
+                </a><br/>
+                后台管理
+            </div>
+        </div>
+    </div>
+
+    <div class="login-form">
+        <div class="form-inner" id="loginInfo">
+            <form class="form-horizontal" id="userLoginForm" autocomplete="off">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user" style="width: 15px;"></i></span>
+                        <input id="userName" class="form-control input-lg" placeholder="用户名" type="text" name="user" autocomplete="off"/>
+                    </div>
+                    <span class="inputTips userName_inputTips">
+                       <!--  <i class="fa fa-times-circle"></i>
+                        邮箱格式错误 -->
+                    </span>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-key" style="width: 15px;"></i></span>
+                        <input type="password" name="password" autocomplete="off" style="display: none;"/>
+                        <input id="pwd" class="form-control input-lg"  placeholder="密 码" type="password" name="password" autocomplete="off"/>
+                    </div> 	
+                    <span class="inputTips pwd_inputTips">
+                       <!--  <i class="fa fa-times-circle"></i>
+                        邮箱格式错误 -->
+                    </span>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <!-- <input type="checkbox"> 记住密码 -->
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="login_btn" type="submit" id="loginBtn">登录</button>
+                </div>
+                <!-- <div class="horizontal-line"></div> -->
+               <!--  <div class="tb-auth">
+                    <a href="javascript:void(0)" class="button button-glow button-border button-rounded " id="goToReg">还没有账号，去注册<i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="findPassword.html" class="button button-glow button-border button-rounded anim-grey">Forget password and to find<i class="fa fa-arrow-circle-right"></i></a>
+                </div> -->
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- js文件 -->
+    <script src="plugins/jquery-2.2.3.min.js"></script>
+    <script src="plugins/layer/layer.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/ajax.js?v12"></script>
+    <script src="js/login.js?v12"></script>
+
+</body>
+</html>
